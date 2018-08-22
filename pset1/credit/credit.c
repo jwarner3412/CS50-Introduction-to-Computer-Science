@@ -6,19 +6,23 @@
 int main(void)
 {
     // init vars
-    int digit;
+    int algo;
+    long card_type1;
+    long card_type2;
     int card_length = 0;
+    long power = 1;
     long odd_sum = 0;
     long even_product = 0;
 
-    // take input
+    // take input and make copy
+    //card gets modified in while loop below and we need to ref the orig number further down
     long card_input = get_long_long("Number: ");
     long card = card_input;
 
     // digit by digit from the back
     while (card)
     {
-        digit = card % 10;
+        int digit = card % 10;
         card = card / 10;
         card_length++;
         // even numbers
@@ -51,19 +55,18 @@ int main(void)
     }
 
     // final check sum of algorithm
-    int algo = even_product + odd_sum;
+    algo = even_product + odd_sum;
 
     // for powers without math lib to get first 2 placeholders easily
-    long power = 1;
     for (int i = 0; i < card_length - 2; i++)
     {
         power *= 10;
     }
 
     // gets second digit
-    long card_type2 = card_input / power;
+    card_type2 = card_input / power;
     // gets first digit
-    long card_type1 = card_type2 / 10;
+    card_type1 = card_type2 / 10;
     // sets 2nd digit with modulo, 1st digit set with base 10 division alone, for reference below
     card_type2 = card_type2 % 10;
 

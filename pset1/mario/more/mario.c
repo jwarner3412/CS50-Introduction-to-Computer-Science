@@ -28,7 +28,7 @@ int main(void)
             printf("#");
         }
 
-        // middles spaces
+        // middle spaces
         printf("  ");
 
         // puts in pounds (right)
@@ -46,5 +46,4 @@ int main(void)
         // line break
         printf("\n");
     }
-
 }
