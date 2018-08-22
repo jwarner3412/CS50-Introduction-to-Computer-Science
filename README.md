@@ -12,5 +12,5 @@ Simple space invaders knock off build with Scratch drag and drop visual code edi
 ### mario.c
 Draws pyramid from Mario in the console with whitespace and '#'.
 
-### credic.c
+### credit.c
 Recieves user input of credit card number, program validates card number via Luhn's algorithm and number of total digits, then returns card type (visa, mc, amex).
