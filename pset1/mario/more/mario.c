@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 
+// draws the double pyramid from mario in the console with whitespace and '#'
 
 int height;
 
